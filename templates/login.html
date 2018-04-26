@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Login to Blogz</h1>
+    <br />
+    <form method="post">
+        <label for="username">
+            Username
+            <input type= "text" name ="username" value= '{{username}}'/>
+            <span class="error">{{username_error}}</span>
+        </label>
+        <label for="password">
+            Password
+            <input type= "password" name ="password" value= '{{password}}'/>
+            <span class="error">{{password_error}}</span>
+        </label>
+        <input type = "submit" value = "Login"/>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
